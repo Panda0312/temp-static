@@ -1,0 +1,133 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  height: 200px;
+  background-color: blue;
+}
+
+.content {
+  min-height: max(400px, calc(100vh - 700px));
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+.content-title {
+  text-align: center;
+}
+
+.content-detail {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+nav .head {
+  background-color: rgb(39, 231, 160);
+  text-align: center;
+  padding: 8px 6px;
+  color: aqua;
+}
+
+nav .head > div:first-child {
+  border-bottom: 2px solid aqua;
+}
+
+nav {
+  border: 2px solid #ccc;
+  display: inline-block;
+}
+.nav-list {
+  padding: 0 8px;
+}
+.nav-item {
+  padding: 6px;
+}
+.nav-item + .nav-item {
+  border-top: 1px solid rgb(88, 153, 226);
+}
+
+.detail {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 800px;
+}
+.detail .product {
+  width: 240px;
+  height: 240px;
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.pagination {
+  text-align: center;
+}
+
+.pagination a {
+  text-decoration: none;
+  margin: 0 6px;
+  cursor: pointer;
+}
+.pagination button {
+  background-color: aquamarine;
+  color: #fff;
+  padding: 4px 6px;
+  border: none;
+  margin: 0 6px;
+}
+
+footer {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  background-color: #333;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin-right: 140px;
+}
+
+.qr-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.code-img {
+  width: 150px;
+  height: 150px;
+  background-color: #ccc;
+}
+
+.link > a {
+  display: block;
+  color: #fff;
+}
+
+.footer-end {
+  margin-top: 20px;
+}
+
+.footer-end p {
+  margin: 2px;
+  color: #fff;
+}
